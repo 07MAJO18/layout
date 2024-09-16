@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout 3</title>
+        <script>
+
+            function closeMenu() {
+                document.querySelector("nav").style.marginLeft = "-320px";
+                document.querySelector("main").style.marginLeft = "40px";
+                document.querySelector("#menuopen").style.display = "block";
+                document.querySelector("#menuclose").style.display = "none";
+            }
+
+            function openMenu() {
+                document.querySelector("nav").style.marginLeft = "0px";
+                document.querySelector("main").style.marginLeft = "360px";
+                document.querySelector("#menuopen").style.display = "none";
+                document.querySelector("#menuclose").style.display = "block";
+            }
+
+        </script>
+
+        <style>
+            
+            @media only screen and (max-width: 800px) {
+                nav {
+                    margin-left: -320px;
+                }
+
+                main {
+                    margin-left: 40px;
+                }
+
+                #menuopen {
+                    display: block;
+                }
+
+                #menuclose {
+                    display: none;
+                } 
+            }
+
+            @media only screen and (min-width:801px) {
+                nav {
+                    margin-left: 0px;  
+                }
+
+                main {
+                    margin-left: 360px;
+                }
+                
+                #menuopen {
+                    display: none;
+                }
+
+                #menuclose {
+                    display: block;
+                }
+            
+        }
+            
+            nav {
+                width: 350px;
+                height: 100%;
+                position: fixed;
+                left: 0;
+                top: 0;
+                background-image: url("https://static.vecteezy.com/system/resources/previews/030/206/762/large_2x/ai-generated-dark-sky-and-clouds-background-storm-time-dark-thunderstorm-free-photo.jpeg");
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                transition: margin-left 0.5s;
+            }
+
+            .menubtn {
+                width: 20px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+
+            main {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                gap: 10px;
+                padding: 20px;
+                align-content: space-between;
+                transition: margin-left 0.5s;
+            }
+
+            nav > a {
+                color: #ffffff;
+                text-decoration: none;
+                margin-bottom: 10px;
+                font-family: "Syne", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+                font-size: 40pt;
+            }
+
+            div.card {
+                width: 200px;
+                height: 250px;
+                overflow: hidden; 
+                margin: 10px;
+                cursor: pointer;
+                background-color: white;
+                filter:drop-shadow(5px 5px 5px #adadad);
+            }
+
+            div.large {
+                grid-column: 1/3;
+                grid-row: 1/3;
+                height: 530px;
+                width: 450px;
+            }
+
+            div.card > h1 {
+                font-size: 14pt;
+                text-align: center;
+                font-family: "Inter", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+
+            div.card > img {
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,800&display=swap" rel="stylesheet">
+
+    <body>
+        <nav>
+            <img onclick="openMenu()" id="menuopen" class="menubtn" src="m2i8G6G6b1m2A0G6.png">
+            <img onclick="closeMenu()" id="menuclose" class="menubtn" src="m2i8G6G6b1m2A0G6.png">
+            <a href="">LÄNK 1</a>
+            <a href="">LÄNK 2</a>
+            <a href="">LÄNK 3</a>
+        </nav>
+        <main>
+           
+            <div class ="card large">
+                <h1>Kill 'em All</h1>
+                <img src="https://m.media-amazon.com/images/I/414eyiIz45L._AC_SY1000_.jpg">
+           </div>
+
+           <div class ="card">
+            <h1>Ride the Lightning</h1>
+            <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwed5aa832/images/3/5/1/6/351667a.jpg?sw=1000&sh=800&sm=fit&sfrm=png">
+            </div>
+
+            <div class ="card">
+                <h1>Master of Puppets</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTvh1UPPwSebAPlXKZPFQVzpcceOx5TA1KF1dnJbrRohkFVl5-El6WMeXZ7nND7ICIIZhKkD4V_mt1vWXBqD8pogoPJtZi2UHA2HuguqtFM7tS5AOzt0H7d">
+           </div>
+           
+           <div class ="card">
+            <h1>...And Justice for All</h1>
+            <img src="https://m.media-amazon.com/images/I/41VWxXg8qbL._AC_SY1000_.jpg">
+            </div>
+
+            <div class ="card">
+                <h1>Metallica</h1>
+                <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwffe74191/images/3/6/4/9/364978a-emp.jpg?sw=200&sh=200&sm=fit&sfrm=png">
+            </div>
+
+            <div class ="card">
+                <h1>Iron Cross Guitar</h1>
+                <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf5f69d5e/images/2/4/3/7/243709a-emp.jpg?sw=255&sh=250&sm=fit&sfrm=png">
+            </div>
+
+            <div class ="card">
+                <h1>Sad But True</h1>
+                <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwb4483682/images/3/5/7/0/357083a-emp.jpg?sw=1000&sh=800&sm=fit&sfrm=png">
+            </div>
+
+            <div class ="card">
+                <h1>Biker</h1>
+                <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw2bb6d907/images/3/8/0/1/380163a.jpg?sw=255&sh=250&sm=fit&sfrm=png">
+            </div>
+
+            <div class ="card">
+                <h1>Whiskey in the Jar</h1>
+                <img src="https://www.emp-shop.se/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dw42f48961/images/1/1/0/4/110424a-emp.jpg?sw=255&sh=250&sm=fit&sfrm=png">
+            </div>
+        </main>
+    </body>
+</html>
