@@ -1,0 +1,3 @@
+kanske lägga till en rubrik/namn högst upp
+göra en custom scrollbar
+göra klart ritningen
