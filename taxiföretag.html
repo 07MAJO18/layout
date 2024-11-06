@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Norrbotten Taxi</title>
+        <style>
+            body, html {
+                margin: 0px;
+                height: 100%;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                background-color: #25383C;
+                height: 50px;
+                width: 100%;
+                text-align: center;
+                z-index: 1000;
+            } 
+
+            button.btnnoll {
+                border: none;
+                background-color: #25383C;
+                font-size: larger;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+
+            button.btnnoll > a {
+                color: white;
+            }
+
+            button.btnett > a {
+                color: white;
+            }
+
+            button.btntva > a {
+                color: white;
+            }
+
+            button.btntre > a {
+                color: white;
+            }
+
+            button.btnfyra > a {
+                color: white;
+            }
+
+            button.btnfem > a {
+                color: white;
+            }
+
+            button.btnsex > a {
+                color: #25383C;
+            }
+
+            button.btnnoll {
+                margin-right: 600px;
+                font-size: larger;
+            }
+
+            button.btnett, button.btntva, button.btntre, button.btnfyra, button.btnfem {
+                height: 30px;
+                background-color: #25383C;
+                border: none;
+                margin-top: 10px;
+                border-radius: 3px;
+                font-size: larger;
+            }
+
+            button.btnsex {
+                height: 30px;
+                background-color: white;
+                border: none;
+                margin-top: 10px;
+                margin-left: 600px;
+                border-radius: 150px;
+                font-size: medium;
+            }
+
+            button.btnett:hover {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+
+            button.btntva:hover {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+
+            button.btntre:hover {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+
+            button.btnfyra:hover {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+
+            button.btnfem:hover {
+                text-decoration: underline;
+                text-decoration-color: white;
+            }
+
+            button.btnsex:hover {
+                background-color: #ADD8E6;
+            }
+
+            header {
+                background-image: url("https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg");
+                background-size: cover;
+                height: 800px;
+                text-align: center;  
+            }
+            
+            h1 {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                position: absolute;
+                top: 300px;
+                color: white;
+                font-size: 50pt;
+                text-shadow: 2px 2px #404040;
+                margin-left: 800px;
+            }
+
+            main.ett {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #ADD8E6;
+                border-radius: 5px;
+                margin: 20px 50px 20px 50px;
+                padding: 20px 250px 20px 250px;
+            }
+
+            main.ett img {
+                height: 500px;
+                width: 500px;
+                border-radius: 5px;
+                max-width: 40%;
+            }
+
+            section.ett {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                color: #25383C;
+                max-width: 55%;
+                text-align: center;
+                width: 500px;
+                margin: 150px 0px 0px 200px;
+            }
+
+            section.ett button {
+                border-radius: 150px;
+            }
+
+            div.tva {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            div.card {
+                width: 500px;
+                overflow: hidden;
+                margin: 20px 50px 0px 50px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                color: #25383C;
+                flex-grow: 2;
+            }
+
+            div.cardett {
+                background-image: url("https://static.bonniernews.se/ba/APl9ibVYWWESUMy7MgdLcNa0new.jpeg?crop=3028%2C1703%2Cx0%2Cy411&width=980&format=pjpg&auto=webp");
+                background-size: cover;
+                height: 500px;
+                border-radius: 5px;
+            }
+
+            div.cardtva {
+                background-image: url("https://c.pxhere.com/photos/31/d0/winter_winter_way_snow_forest_wintry_cold_forest_path_nature-1201365.jpg!d");
+                background-size: cover;
+                height: 500px;
+                border-radius: 5px;
+            }
+
+            div.cardtre {
+                background-image: url("https://polistidningen.se/wp-content/uploads/2020/11/taxi-e1409837355519.jpg");
+                background-size: cover;
+                height: 500px;
+                border-radius: 5px;
+            }
+
+            main.tre {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #25383C;
+                border-radius: 5px;
+                margin: 20px 50px 20px 50px;
+                padding: 20px 250px 20px 250px;
+            }
+
+            main.tre img {
+                height: 500px;
+                width: 500px;
+                border-radius: 5px;
+                max-width: 40%;
+            }
+
+            section.tre {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                color: white;
+                max-width: 55%;
+                text-align: center;
+                width: 500px;
+                margin: 150px 0px 0px 200px;
+            }
+
+            div.fyra {
+                width: 100%;
+                background-color: #ADD8E6;
+                position: relative;
+                bottom: 0;
+            }
+
+            main.fyra {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            h3 {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                color: #25383C;
+                text-align: center;
+            }
+
+            footer {
+                background-color: #25383C;
+                width: 100%;
+                height: 10px;
+                position: relative;
+                bottom: 0;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Lora:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <button class="btnnoll"><a href="taxiföretag.html">Norrbotten Taxi</a></button>
+            <button class="btnett"><a href="">Om oss</a></button>
+            <button class="btntva"><a href="">Jobba hos oss</a></button>
+            <button class="btntre"><a href="">Miljöpolicy</a></button>
+            <button class="btnfyra"><a href="">Priser</a></button>
+            <button class="btnfem"><a href="">Kontakt</a></button>
+            <button class="btnsex"><a href="">Beställ Taxi</a></button>
+        </nav>
+        <header>
+            <h1>Välkommen!</h1>
+        </header>
+        <div class="ett">
+        <main class="ett">
+            <img src="https://www.mitti.se/image-3.19268.10461.20220705122623.774fd35abb">
+            <section class="ett">
+                <p><h2>Söka upprätthållande år, samtidigt.</h2></p>
+                <p>Löksås ipsum redan erfarenheter strand sax groda räv redan mjuka annat strand vidsträckt söka, blev sällan vid hwila bra lax för ingalunda dimmhöljd söka tid. Hav dag smultron vi tid kom ordningens sig ordningens och ordningens, ska tre sin räv händer så dock nu år, att blivit verkligen dunge faktor strand annat tidigare miljoner. Redan mot fram upprätthållande färdväg är sorgliga samma det, träutensilierna flera faktor trevnadens sin strand blev träutensilierna dimma, både som tiden ännu händer år räv.</p>
+                <button class="btntva"><a href="">Jobba hos oss</a></button>
+            </section>
+        </main>
+        </div>
+        <div class="tva">
+            <div class ="card">
+                <div class ="cardett"></div>
+                <div> <p>Löksås ipsum och genom dimmhöljd av, bäckasiner jäst brunsås fram dag, färdväg dimma och därmed. Kom sig kom som oss strand sällan groda varit kunde, denna stora från sig vi blev mot nya, som annat trevnadens blivit faktor samtidigt och sällan. Stora precis oss precis om som dimma räv ingalunda träutensilierna sitt, ordningens blev dimma färdväg björnbär sax sista ännu är fram sig, vidsträckt åker söka bra brunsås äng har om jäst.</p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardtva"></div>
+                <div><p>Hwila jäst bland ser därmed dock själv trevnadens kanske ännu hav, jäst vid sig vemod hans ordningens precis ordningens enligt, trevnadens hav hwila själv annat om göras åker nu. Lax vad hans vidsträckt regn räv regn gör själv flera, därmed år dimma dimmhöljd stora kan själv tid, ordningens åker vemod erfarenheter lax söka mot dunge. Se sjö gamla groda har annan flera ordningens vi göras hav, blivit helt enligt fram sista som och vad ser ordningens, för som samtidigt att ordningens del som icke vi.</p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardtre"></div>
+                <div><p>Kan vidsträckt hela bäckasiner strand där icke oss hwila rännil, för söka varit lax det hwila vad ser bland ska, ännu dunge det där färdväg av när nu. På sitt stig brunsås se samtidigt kunde trevnadens tre äng fram, sista tidigare där trevnadens smultron tidigare själv sorgliga. Björnbär tid annat sjö rot samma häst där nu flera, regn som stora faktor sällan ska nya kan lax, dimma ser när hwila samtidigt har både och.</p></div>
+            </div>
+        </div>
+        <div class="tre">
+            <main class="tre">
+                <img src="https://f.nordiskemedier.dk/2uoe17tf3m1ht9ub.jpg">
+                <section class="tre">
+                    <p><h2>Blev mot helt, tid.</h2></p>
+                    <p>Löksås ipsum på det stora när vad som oss, kunde enligt björnbär det stig ingalunda precis hans, bland äng så dag gör hela och. Inom sällan ännu björnbär ännu kom nu denna gamla mjuka hav rännil del, icke tidigare vid jäst som där strand kom är sjö hela ingalunda, varit erfarenheter groda lax för ingalunda miljoner träutensilierna annan för där.</p>
+                </section>
+            </main>
+        </div>
+        <div class="fyra">
+           <main class="fyra">
+            <section class="fyraa">
+                <p><h3>Besöksadress</h3>Månskensvägen 9 <br> 471 39 HAPARANDA</p>
+            </section>
+            <section class="fyrab">
+                <p><h3>E-Post</h3>info@norrbottentaxi.se</p>
+            </section>
+            <section class="fyrac">
+                <p><h3>Telefon</h3>Tel 5831-629 47</p>
+            </section>
+            </main>
+            <h3>Copyright Norrbotten Taxi 2024</h3>
+        </div>
+        <footer></footer>
+    </body>
+</html>
