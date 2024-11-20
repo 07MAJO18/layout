@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teater</title>
+
+        <script>
+
+            function closeMenu() {
+                document.querySelector("nav").style.marginLeft = "-320px";
+                document.querySelector("#menuopen").style.display = "block";
+                document.querySelector("#menuclose").style.display = "none";
+            }
+
+            function openMenu() {
+                document.querySelector("nav").style.marginLeft = "0px";
+                document.querySelector("#menuopen").style.display = "none";
+                document.querySelector("#menuclose").style.display = "block";
+            }
+
+        </script>
+        
+        <style>
+            
+            @media only screen and (max-width: 800px) {
+                nav {
+                    margin-left: -320px;
+                }
+
+                #menuopen {
+                    display: block;
+                }
+
+                #menuclose {
+                    display: none;
+                } 
+            }
+
+            @media only screen and (min-width:801px) {
+                nav {
+                    margin-left: -320px;  
+                }
+                
+                #menuopen {
+                    display: block;
+                }
+
+                #menuclose {
+                    display: none;
+                }
+            
+            }
+            
+            nav {
+                width: 350px;
+                height: 100%;
+                position: fixed;
+                left: 0;
+                top: 0;
+                background-color: #8B0000;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                transition: margin-left 0.5s;
+            }
+
+            .menubtn {
+                width: 20px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+
+            body, html {
+                margin: 0px;
+                height: 100%;
+            }
+
+            header {
+                background-image: url("showtime.gif");
+                background-position-y: -200px;
+                width: 100%;
+                height:950px;
+                background-size: cover;
+            }
+
+            input {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+            }
+
+            a {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                font-size: 20pt;
+                color: white;
+                text-decoration: none;
+                margin-top: 10px;
+                text-shadow: 2px 2px #404040;
+            }
+
+            h1 {
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                font-size: 80pt;
+                color: #1e90ff;
+                text-shadow: 3px 3px #404040;
+                margin: 0px 0px 0px 70px;
+            }
+
+            section.ett {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            div.card {
+                height: 500px;
+                width: 350px;
+                max-width: 350px;
+                overflow: hidden;
+                margin: 20px 10px 100px 20px;
+                text-shadow: 2px 2px #404040;
+                flex-grow: 2;
+            }
+
+            div.zoom {
+                background-size: auto 100%;
+                transition: background-size 0.5s;
+            }
+
+            div.zoom:hover {
+                background-size: auto 102%;
+            }
+
+            div.cardett {
+                background-image: url("https://minneapolis.broadway.com/wp-content/uploads/sites/13/2024/10/LMZ-2425-Slider.jpg");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -340px;
+                margin-left: 40px;
+            }
+
+            div.cardtva {
+                background-image: url("https://calarts.edu/sites/default/files/2024-11/theater_1.jpg");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -135px;
+            }
+
+            div.cardtre {
+                background-image: url("https://www1.villanova.edu/content/university/liberal-arts-sciences/programs/theatre-studio-art/_jcr_content/pagecontent/image.img.jpg/1666029645978.jpg");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -310px;
+            }
+
+            div.cardfyra {
+                background-image: url("https://cdn.mytheatreland.com/images/show/28524_show_1279x840_01.jpg");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -182px;
+            }
+            
+            div.cardfem {
+                background-image: url("https://www.whitman.edu/images/academics/majors/theater-and-dance/2023/Winter%20Tale%20Website%20version-min_batcheditor_fotor.jpg");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -310px;
+            }
+
+            div.cardsex {
+                background-image: url("https://calarts.edu/sites/default/files/styles/800x600/public/2024-09/SOT_BFA_Acting_Hero.jpg.jpeg?itok=6yMy5ghb");
+                height: 100%;
+                border-radius: 5px;
+                background-position: -150px;
+            }
+
+            section.gif {
+                background-image: url("walking.gif");
+                background-size: cover;
+                height: 600px;
+                background-position-y: -400px;
+            }
+
+            section.tva {
+                display: flex;
+            }
+
+            div.cardandra {
+                width: 600px;
+                overflow: hidden;
+                margin: 100px 10px 10px 10px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: italic;
+                font-size: 15pt;
+                flex-grow: 2;
+            }
+
+            div.cardsju {
+                background-image: url("https://dezwartehond.nl/wp-content/uploads/2020/07/dezwartehond_theaterzuidplein_result_17-2000x1333.jpg");
+                background-size: cover;
+                height: 400px;
+                border-radius: 5px;
+            }
+
+            div.cardatta {
+                background-image: url("https://washington.org/sites/default/files/styles/generic_hero_banner_1440_x_600/public/2021-09/JBSmoove-at-Warner_Warnertheater.jpg.webp?itok=6NieJNos");
+                background-size: cover;
+                height: 400px;
+                border-radius: 5px;
+            }
+
+            div.cardnio {
+                background-image: url("https://cdn.prod.website-files.com/65003a720d2257bcb79cb62d/65a008e96af7557599e0b418_Agora-Theatre-in-1898282916.webp");
+                background-size: cover;
+                background-position: -100px;
+                height: 400px;
+                border-radius: 5px;
+            }
+        </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&family=Lora:ital,wght@0,700;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <img onclick="openMenu()" id="menuopen" class="menubtn" src="m2i8G6G6b1m2A0G6.png">
+            <img onclick="closeMenu()" id="menuclose" class="menubtn" src="m2i8G6G6b1m2A0G6.png">
+            <input type="text" placeholder="VAD LETAR DU EFTER?">
+            <a href="">KALENDARIUM</a>
+            <a href="">REPERTOAR</a>
+            <a href="">ENSEMBLE</a>
+            <a href="">OM BESÖKET</a>
+            <a href="">TILLGÄNGLIGHET</a>
+        </nav>
+        <header></header>
+        <main>
+            <h1>JUST NU</h1>
+            <section class="ett">
+                <div class="card">
+                    <div class="cardett zoom">&nbsp;</div>
+                </div>
+                <div class="card">
+                    <div class="cardtva zoom">&nbsp;</div>
+                </div>
+                <div class="card">
+                    <div class="cardtre zoom">&nbsp;</div>
+                </div>
+                <div class="card">
+                    <div class="cardfyra zoom">&nbsp;</div>
+                </div>
+                <div class="card">
+                    <div class="cardfem zoom">&nbsp;</div>
+                </div>
+                <div class="card">
+                    <div class="cardsex zoom">&nbsp;</div>
+                </div>
+            </section>
+            <section class="gif">
+            </section>
+            <section class="tva">
+            <div class ="cardandra">
+                <div class ="cardsju zoom"></div>
+                <div> <p>Löksås ipsum och genom dimmhöljd av, bäckasiner jäst brunsås fram dag, färdväg dimma och därmed. Kom sig kom som oss strand sällan groda varit kunde, denna stora från sig vi blev mot nya, som annat trevnadens blivit faktor samtidigt och sällan. Stora precis oss precis om som dimma räv ingalunda träutensilierna sitt, ordningens blev dimma färdväg björnbär sax sista ännu är fram sig, vidsträckt åker söka bra brunsås äng har om jäst.</p></div>
+            </div>
+            <div class ="cardandra">
+                <div class ="cardatta zoom"></div>
+                <div><p>Hwila jäst bland ser därmed dock själv trevnadens kanske ännu hav, jäst vid sig vemod hans ordningens precis ordningens enligt, trevnadens hav hwila själv annat om göras åker nu. Lax vad hans vidsträckt regn räv regn gör själv flera, därmed år dimma dimmhöljd stora kan själv tid, ordningens åker vemod erfarenheter lax söka mot dunge. Se sjö gamla groda har annan flera ordningens vi göras hav, blivit helt enligt fram sista som och vad ser ordningens, för som samtidigt att ordningens del som icke vi.</p></div>
+            </div>
+            <div class ="cardandra">
+                <div class ="cardnio zoom"></div>
+                <div><p>Kan vidsträckt hela bäckasiner strand där icke oss hwila rännil, för söka varit lax det hwila vad ser bland ska, ännu dunge det där färdväg av när nu. På sitt stig brunsås se samtidigt kunde trevnadens tre äng fram, sista tidigare där trevnadens smultron tidigare själv sorgliga. Björnbär tid annat sjö rot samma häst där nu flera, regn som stora faktor sällan ska nya kan lax, dimma ser när hwila samtidigt har både och.</p></div>
+            </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
