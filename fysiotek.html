@@ -19,7 +19,7 @@
                 z-index: 1000;
             }
 
-            button {
+            button.btnett, button.btntva, button.btntre, button.btnfyra {
                 background-color: white;
                 border: none;
                 margin: 10px;
@@ -30,7 +30,7 @@
                 font-size: 13pt;
             }
 
-            a {
+            a.nav {
                 color: #5e664f;
                 text-decoration: none;
             }
@@ -56,30 +56,209 @@
                 text-shadow: 2px 2px 8px #404040;
             }
 
-            section {
+            section.noll {
                 margin: auto auto 20px auto;
+            }
+
+            section.ett {
+                background-color: #858F73;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            div.ett {
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-flow: nowrap row;
+                height: 600px;
+                width: 90%;
+                align-items: stretch;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div.etta {
+                color: black;
+                padding: 170px 20px 100px 20px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 15pt;
+                text-align: center;
+                width: 50%;
+            }
+
+            div.ettb {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/Fysiotek-personal.jpg");
+                background-size: cover;
+                min-height: 100%;
+                width: 50%;
+                border-radius: 0 20px 20px 0;
+            }
+
+            button.btnfem {
+                background-color: white;
+                border: none;
+                margin: 20px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 13pt;
+                border: solid #5e664f;
+                border-radius: 50px;
+            }
+
+            a {
+                color: #5e664f;
+                text-decoration: none;
+            }
+
+            section.tva {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+
+            div.card {
+                width: 300px;
+                overflow: hidden;
+                margin: 10px;
+                color: #5e664f;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 13pt;
+                flex-grow: 2;
+                filter:drop-shadow(5px 5px 5px #adadad);
+                background-color: white;
+                border-radius: 10px 10px 10px 10px;
+            }
+
+            div.cardett {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/Bild-31-640x640.jpg");
+                background-size: cover;
+                height: 300px;
+            }
+
+            div.cardtva {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/pexels-photo-3757952-2048x1365-1-640x640.jpeg");
+                background-size: cover;
+                height: 300px;
+            }
+
+            div.cardtre {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/Bild-27-NY-640x640.jpg");
+                background-size: cover;
+                height: 300px;
+            }
+
+            div.cardfyra {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/pexels-photo-4041392-2048x1365-1-640x640.jpeg");
+                background-size: cover;
+                height: 300px;
+            }
+
+            div.cardfem {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/pexels-photo-4210373-2048x1365-1-640x640.jpeg");
+                background-size: cover;
+                height: 300px;
+            }
+
+            section.tre {
+                background-color: #858F73;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            div.ettd {
+                color: black;
+                padding: 170px 20px 100px 20px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 15pt;
+                text-align: center;
+                width: 50%;
+            }
+
+            div.ettc {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/pexels-photo-841130-2048x1365-1-1536x1024-1-640x640.jpeg");
+                background-size: cover;
+                min-height: 100%;
+                width: 50%;
+                border-radius: 20px 0 0 20px;
             }
         </style>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Della+Respira&family=Lora:ital,wght@0,700;1,700&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900&family=Della+Respira&family=Lora:ital,wght@0,700;1,700&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
             <a href="fysiotek.html"><img src="fysiotek.jpg" height="50"></a>
-            <button class="btnett"><a href="">OM OSS</a></button>
-            <button class="btntva"><a href="">VÅRA TJÄNSTER</a></button>
-            <button class="btntre"><a href="">FYSIOGYM</a></button>
-            <button class="btnfyra"><a href="">KONTAKTA OSS</a></button>
+            <button class="btnett"><a class="nav" href="#omoss">OM OSS</a></button>
+            <button class="btntva"><a class="nav" href="#varatjanster">VÅRA TJÄNSTER</a></button>
+            <button class="btntre"><a class="nav" href="#fysiogym">FYSIOGYM</a></button>
+            <button class="btnfyra"><a class="nav" href="">KONTAKTA OSS</a></button>
         </nav>
 
         <header>
-                <section>
+                <section class="noll">
                     <h1>FYSIOTEK</h1>
                     <p>Människans välmående i centrum sedan 1982</p>
                 </section>
         </header>
+        <section id="omoss" class="ett">
+            <div class="ett">
+                <div class="etta">
+                    <h3>OM OSS</h3>
+
+                    <p>Vi är specialiserade på människans välmående och erbjuder tjänster inom Fysioterapi, Stegklinik, Rehabilitering, Massage, Fysiogym, i vårt utbud har vi även Beauty Clinic och Hair clinic. I vår Webbshop hittar du produkter inom hälsa, välmående och skönhet.</p>
+                    <button class="btnfem"><a href="https://fysiotek-webbshop.se/">WEBBSHOP</a></button>
+                </div>
+                <div class="ettb">
+                </div>
+            </div>
+        </section>
+        <section id="varatjanster" class="tva">
+            <div class ="card">
+                <div class ="cardett zoom"></div>
+                <div> <h1>FYSIOTERAPI</h1> <p></p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardtva zoom"></div>
+                <div> <h1>MASSAGE</h1> <p></p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardtre zoom"></div>
+                <div> <h1>STEGKLINIK</h1> <p></p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardfyra zoom"></div>
+                <div> <h1>BEAUTY CLINIC</h1> <p></p></div>
+            </div>
+            <div class ="card">
+                <div class ="cardfem zoom"></div>
+                <div> <h1>HAIR CLINIC</h1> <p></p></div>
+            </div>
+        </section>
+        <section id="fysiogym" class="tre">
+            <div class="ett">
+                <div class="ettc">
+                </div>
+                <div class="ettd">
+                    <h3>FYSIOGYM</h3>
+
+                    <p>Vi är specialiserade på människans välmående och erbjuder tjänster inom Fysioterapi, Stegklinik, Rehabilitering, Massage, Fysiogym, i vårt utbud har vi även Beauty Clinic och Hair clinic. I vår Webbshop hittar du produkter inom hälsa, välmående och skönhet.</p>
+                </div>
+            </div>
     </body>
 </html>
