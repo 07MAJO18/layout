@@ -112,7 +112,7 @@
                 border-radius: 50px;
             }
 
-            a {
+            a.nav, a.webb {
                 color: #5e664f;
                 text-decoration: none;
             }
@@ -137,6 +137,14 @@
                 filter:drop-shadow(5px 5px 5px #adadad);
                 background-color: white;
                 border-radius: 10px 10px 10px 10px;
+            }
+
+            div.text {
+                padding: 20px;
+            }
+
+            a.massage {
+                color: #5e664f;
             }
 
             div.cardett {
@@ -178,7 +186,7 @@
 
             div.ettd {
                 color: black;
-                padding: 170px 20px 100px 20px;
+                padding: 120px 20px 100px 20px;
                 font-family: "Alegreya", serif;
                 font-optical-sizing: auto;
                 font-weight: 500;
@@ -195,6 +203,36 @@
                 width: 50%;
                 border-radius: 20px 0 0 20px;
             }
+
+            section.fyra {
+                background-image: url("https://www.fysiotek.se/wp-content/uploads/2022/02/Bild-24-1620x800.jpg");
+                background-size: cover;
+                height: 350px;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 20pt;
+                text-align: center;
+                color: white;
+                padding-top: 200px;
+                padding-left: 200px;
+                padding-right: 200px;
+                text-shadow: 2px 2px 8px #404040;
+            }
+
+            section.fem {
+                background-color: #858F73;
+            }
+
+            iframe {
+                margin: 20px;
+                border-radius: 20px;
+            }
+
+            footer {
+
+            }
         </style>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,7 +245,7 @@
             <button class="btnett"><a class="nav" href="#omoss">OM OSS</a></button>
             <button class="btntva"><a class="nav" href="#varatjanster">VÅRA TJÄNSTER</a></button>
             <button class="btntre"><a class="nav" href="#fysiogym">FYSIOGYM</a></button>
-            <button class="btnfyra"><a class="nav" href="">KONTAKTA OSS</a></button>
+            <button class="btnfyra"><a class="nav" href="#kontaktaoss">KONTAKTA OSS</a></button>
         </nav>
 
         <header>
@@ -222,7 +260,7 @@
                     <h3>OM OSS</h3>
 
                     <p>Vi är specialiserade på människans välmående och erbjuder tjänster inom Fysioterapi, Stegklinik, Rehabilitering, Massage, Fysiogym, i vårt utbud har vi även Beauty Clinic och Hair clinic. I vår Webbshop hittar du produkter inom hälsa, välmående och skönhet.</p>
-                    <button class="btnfem"><a href="https://fysiotek-webbshop.se/">WEBBSHOP</a></button>
+                    <button class="btnfem"><a class="webb" href="https://fysiotek-webbshop.se/">WEBBSHOP</a></button>
                 </div>
                 <div class="ettb">
                 </div>
@@ -231,23 +269,41 @@
         <section id="varatjanster" class="tva">
             <div class ="card">
                 <div class ="cardett zoom"></div>
-                <div> <h1>FYSIOTERAPI</h1> <p></p></div>
+                <div class="text"> <h1>FYSIOTERAPI</h1> <p></p></div>
             </div>
             <div class ="card">
                 <div class ="cardtva zoom"></div>
-                <div> <h1>MASSAGE</h1> <p></p></div>
+                <div class="text"> <h1>MASSAGE</h1> 
+                    <p>Massage minskar muskelspänningar och ökar både blodcirkulationen och känslan av fysiskt och psykiskt välbefinnande.</p>
+                    <p>Klassisk massage</p>
+                    <p>Idrottsmassage</p>
+                    <p>Utbildad massör Anne har sin mottagning hos oss läs mer <a class="massage" href="https://vello.fi/utbildadmassoranne/service">här</a>.</p>
+                </div>
             </div>
             <div class ="card">
                 <div class ="cardtre zoom"></div>
-                <div> <h1>STEGKLINIK</h1> <p></p></div>
+                <div class="text"> <h1>STEGKLINIK</h1> 
+                    <p>Alla har användning av bättre fötter!</p>
+                    <p>Stegkliniken är en analys- och behandlingsenhet, som är specialiserad på både barns och vuxnas hållning, rörelse samt analys och behandling av fötternas funktion. Stegklinikernas fysioterapeuter är legitimerade och specialutbildade.</p>
+                </div>
             </div>
             <div class ="card">
                 <div class ="cardfyra zoom"></div>
-                <div> <h1>BEAUTY CLINIC</h1> <p></p></div>
+                <div class="text"> <h1>BEAUTY CLINIC</h1> 
+                    <p>LPG formar din figur naturligt</p>
+                    <p>Lipomassage</p>
+                    <p>Endermolift – stimulerar naturlig skönhet</p>
+                    <p>Denna exklusiva tekniker motverkar åldrandet, gör huden spänstigare på djupet och avlägsnar ålderstecknen.</p>
+                </div>
             </div>
             <div class ="card">
                 <div class ="cardfem zoom"></div>
-                <div> <h1>HAIR CLINIC</h1> <p></p></div>
+                <div class="text"> <h1>HAIR CLINIC</h1> 
+                    <p>Frisk kropp – friskt hår!</p>
+                    <p>Har du problem med håravfall eller hårbotten? Är du ängslig för håravfall eller skallighet? Det kan betyda att allt inte är i balans i din kropp. Med hjälp av hårundersökning får man reda på orsakerna som påverkar hårets och hela kroppens välmående. I hårundersökning analyseras hårrötter pålitligt med hjälp av medicinskt mikroskop. I nästan varje fall kan man med långsiktig och helhetsmässig vård förbättra hårets välmående. Samtidigt mår hela kroppen bättre.</p>
+                    <p>När du mår bra – mår håret också bra.</p>
+                    <p>Hårproblem går att behandla!</p>
+                </div>
             </div>
         </section>
         <section id="fysiogym" class="tre">
@@ -257,8 +313,22 @@
                 <div class="ettd">
                     <h3>FYSIOGYM</h3>
 
-                    <p>Vi är specialiserade på människans välmående och erbjuder tjänster inom Fysioterapi, Stegklinik, Rehabilitering, Massage, Fysiogym, i vårt utbud har vi även Beauty Clinic och Hair clinic. I vår Webbshop hittar du produkter inom hälsa, välmående och skönhet.</p>
+                    <p>Vi samarbetar med Body Business</p>
+                    <img src="https://www.fysiotek.se/wp-content/uploads/2024/08/Bodybusiness-Hapranda.png">
+                    <p>Torggatan 60, Haparanda</p>
+                    <p>Telefon: +358443323371</p>
                 </div>
             </div>
+        </section>
+        <section id="kontaktaoss" class="fyra">
+            <h1>KONTAKTA OSS</h1>
+            <p>Välkommen att kontakta oss på mailadressen: info@fysiotek.se, telefonnummer 070-2332230 eller besök oss på Strandgatan 10A</p>
+        </section>
+        <section class="fem">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1325.9362389738828!2d24.11741693491796!3d65.83978815799551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d5471055555555%3A0x1b612358a6280c9d!2sFysiotek!5e0!3m2!1ssv!2sse!4v1733758489181!5m2!1ssv!2sse" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </body>
+    <footer>
+
+    </footer>
 </html>
